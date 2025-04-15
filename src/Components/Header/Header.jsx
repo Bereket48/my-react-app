@@ -1,6 +1,6 @@
 //rfce
 import React from "react";
-import logo from "../../commonResource/images/icons/logo-sm.png";
+import logo from "../../commonResource/images/icons/logo-sm.png"; // How imported when not exported elsewhere?
 import search from "../../commonResource/images/icons/search-icon-sm.png";
 import cart from "../../commonResource/images/icons/cart-sm.png";
 

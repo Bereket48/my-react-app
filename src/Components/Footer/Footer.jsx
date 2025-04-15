@@ -1,5 +1,7 @@
 import React from "react";
 import flag from "../../commonResource/images/icons/16.png";
+// import "../../commonResource/jQuery/jquery-3.7.1"
+// import "../../commonResource/jQuery/custom"
 function Footer() {
   return (
     <>
