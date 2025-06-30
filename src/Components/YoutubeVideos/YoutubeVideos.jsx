@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../../commonResource/css/youTubeVideos.css";
+import "../../commonResource/css/YoutubeVideos.css";
 
 function YouTubeVideos() {
   const [youTubeVideos, setYouTubeVideos] = useState([]);
