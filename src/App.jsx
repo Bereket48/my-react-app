@@ -1,29 +1,24 @@
-//rfce
-import React from 'react' // May be we don't need this
-import Header from './Components/Header/Header'
-import Footer from './Components/Footer/Footer'
-import Alert from './Components/Alert/Alert'
-import Sec1iPadPro from './Components/Sec1iPadPro/Sec1iPadPro'
-import Sec2MacBookAir from './Components/Sec2MacBookAir/Sec2MacBookAir'
-import Sec3iPhone11Pro from './Components/Sec3iPhone11Pro/Sec3iPhone11Pro'
-import Sec4iPhone11CDC from './Components/Sec4iPhone11CDC/Sec4iPhone11CDC'
-import Sec5tvAndWatch from './Components/Sec5tvAndWatch/Sec5tvAndWatch'
-import Sec6ArcadeCard from './Components/Sec6ArcadeCard/Sec6ArcadeCard'
+import Header from "./Components/Header/Header";
+import Footer from "./Components/Footer/Footer";
+import Home from "./Components/Home/Home";
+import Iphone from "./Components/Iphone/Iphone";
+import Four04 from "./Components/Four04/Four04";
+import SharedLayout from "./Components/SharedLayout/SharedLayout";
+// import SingleAppleProduct from "./Components/SingleAppleProduct/SingleAppleProduct";// I guess i didn't finish this part
+import { Route, Routes } from "react-router-dom";
 function App() {
   return (
     <>
-    <Header />
-    <Alert />
-    <Sec1iPadPro />
-    <Sec2MacBookAir />
-    <Sec3iPhone11Pro />
-    <Sec4iPhone11CDC />
-    <Sec5tvAndWatch />
-    <Sec6ArcadeCard />
-    <Footer />
+      <Routes>
+        <Route path="/" element={<SharedLayout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/iphone" element={<Iphone />} />
+          <Route path="*" element={<Four04 />} />
+          {/* <Route path="#" element={<SingleAppleProduct />} /> */}
+        </Route>
+      </Routes>
     </>
-  )
+  );
 }
 
-export default App
-
+export default App;
